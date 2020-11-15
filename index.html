@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fccd2b3218.js" crossorigin="anonymous"></script>
+    <title>Book list Application</title>
+</head>
+<body>
+
+    <div id="app"></div>
+
+    <div class="container">
+        <h1 class="h1 text-center mt-5">Book application</h1>
+        <p class="subtitle text-center border p-3 h5 mt-4 bg-light text-dark">This application will help you to take under control your book-list</p>
+    
+        <div class="row">
+            <div class="col-6 mt-5 border p-3">
+                <h3 class="h3 mb-3">Save book to list</h3>
+
+                <form id="book-form">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" class="form-control" id="input-title">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="title">Author</label>
+                        <input type="text" class="form-control" id="input-author">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="title">Genre</label>
+                        <input type="text" class="form-control" id="input-genre">
+                    </div>
+
+                    <input type="submit" value="Add book" class="btn btn-primary">
+                </form>
+            </div>
+
+            <div class="col-6 mt-5" id="bookListParent"></div>
+        </div>
+        
+    </div>
+
+
+    
+    <script src="app.js" type="module"></script>
+</body>
+</html>
